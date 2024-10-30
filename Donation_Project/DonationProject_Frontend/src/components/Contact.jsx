@@ -22,10 +22,7 @@ function Contact() {
                 value={name}
                 placeholder="Your Name"
                 onChange={(e) => {
-                  const regex = /^[a-zA-Z\s]*$/;
-                  if (regex.test(e.target.value)) {
-                    setName(e.target.value);
-                  }
+                  setName(e.target.value);
                 }}
                 maxLength="30"
                 title="Only letters and spaces are allowed"
@@ -38,8 +35,6 @@ function Contact() {
                 onChange={(e) => {
                   setMail(e.target.value);
                 }}
-                pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
-                title="Please enter a valid email address"
                 required
               />
 
@@ -47,17 +42,8 @@ function Contact() {
                 type="tel"
                 value={phone}
                 placeholder="Your Phone Number"
-                onChange={(e) => {
-                  const regex = /^[0-9]*$/;
-                  if (
-                    regex.test(e.target.value) &&
-                    e.target.value.length <= 10
-                  ) {
-                    setPhone(e.target.value);
-                  }
-                }}
-                maxLength="10" // Limit phone number length to 10 digits
-                title="Please enter a valid 10-digit phone number"
+                onChange={(e) => setPhone(e.target.value)}
+                maxLength="10"
                 required
               />
             </div>
