@@ -24,8 +24,8 @@ import validator from "validator";
    phone:{
     type:String,
     required:true,
-    minLength:[11,"phone must contain at least 11 digits"],
-    maxLength:[11,"phone cannot exceed 11 digits"],
+    minLength:[10,"phone must contain at least 11 digits"],
+    maxLength:[10,"phone cannot exceed 11 digits"],
    },
    message:{
     type:String,

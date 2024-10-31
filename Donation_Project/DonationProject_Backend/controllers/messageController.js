@@ -2,6 +2,7 @@ import { Message } from "../models/message.js";
 
 export const postMessage=async(req,res,next)=>{
     const{name,email,message,phone}=req.body;
+    console.log("Request Body:", req.body);
 
     if(!name || !email || !phone || !message)
     {
