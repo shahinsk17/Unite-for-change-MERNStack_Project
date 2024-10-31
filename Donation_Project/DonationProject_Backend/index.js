@@ -17,6 +17,7 @@ app.use(express.json());
 app.use(express.urlencoded({extended:true}));
 
 app.use("/api/v1/message",messageRouter);
+
 app.use(cors({ origin: 'https://unite-for-change-mern-stack-project.vercel.app' }));
 
 
