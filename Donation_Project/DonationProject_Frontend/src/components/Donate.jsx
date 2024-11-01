@@ -44,7 +44,7 @@ function Donate() {
           email: "customer@example.com",
         },
         theme: {
-          color: "#F37352",
+          color: "#FF4433",
         },
       };
 
