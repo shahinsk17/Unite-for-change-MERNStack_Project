@@ -53,7 +53,7 @@ function Donate() {
     } catch (error) {
       console.error("Error creating order:", error);
       alert("Failed to create order. Please try again later.");
-      setDisableBtn(false); // Re-enable button on error
+      setDisableBtn(false);
     }
   };
 
